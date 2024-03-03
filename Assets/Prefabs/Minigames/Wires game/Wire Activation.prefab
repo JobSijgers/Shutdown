@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7808643372513832950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7808643372513832952}
+  - component: {fileID: 7808643372513832951}
+  - component: {fileID: 7808643372513832953}
+  m_Layer: 13
+  m_Name: Wire Activation
+  m_TagString: Trigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7808643372513832952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808643372513832950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.31, y: -1.422, z: 2.52}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7808643372513832951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808643372513832950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9be67a19c80c843bc2ce87b53b7611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 100
+  limeStart: {fileID: 0}
+  redStart: {fileID: 0}
+  purpleStart: {fileID: 0}
+  yellowStart: {fileID: 0}
+  limeEnd: {fileID: 0}
+  redEnd: {fileID: 0}
+  purpleEnd: {fileID: 0}
+  yellowEnd: {fileID: 0}
+  limeWire: {fileID: 1215733124557977772, guid: 80f563a084f324949b6c21358c06b775, type: 3}
+  redWire: {fileID: 1215733124557977772, guid: a3abe12f2e3be964ca95c08e845f275b, type: 3}
+  purpleWire: {fileID: 1215733124557977772, guid: 1d8824e143ec4564fb205107262691b7, type: 3}
+  yellowWire: {fileID: 1215733124557977772, guid: 3daeb6371fa33c044bf7168ec4aea1ca, type: 3}
+  buttons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  menu: {fileID: 0}
+  player: {fileID: 0}
+  bomb: {fileID: 0}
+--- !u!65 &7808643372513832953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808643372513832950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.05765, y: 3.05765, z: 3.05765}
+  m_Center: {x: 0, y: 0.3810404, z: -0.64778477}

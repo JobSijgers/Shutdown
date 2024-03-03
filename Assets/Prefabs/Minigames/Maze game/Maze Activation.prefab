@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &862941854506032850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862941854506032848}
+  - component: {fileID: 862941854506032851}
+  - component: {fileID: 862941854506032849}
+  m_Layer: 13
+  m_Name: Maze Activation
+  m_TagString: Trigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &862941854506032848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862941854506032850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.75, y: -1.19, z: 3.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &862941854506032851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862941854506032850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a49a7103ce53104696020f4df3f5c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTracing: 0
+  dotChance: 0.5
+  breakChance: 0.5
+  minDistance: 12
+  endPos: {x: 5, y: 4}
+  startPos: {x: 0, y: 0}
+  width: 6
+  height: 5
+  topLeftPos: {x: 590, y: 845, z: 0}
+  pointOffset: 150
+  cross: {fileID: 2907456096431752773, guid: e0d86f2db7e35e84f99d180eb5cb498f, type: 3}
+  endCross: {fileID: 2907456096431752773, guid: de169fdd26ca1214b9f6efde6e4e8414, type: 3}
+  hexagon: {fileID: 6930634064604008885, guid: 170395e4b0c3f1d4faa98504052e5604, type: 3}
+  line: {fileID: 6735152497296510247, guid: 56b4bcafdf2be114baa04186cfd040f5, type: 3}
+  menu: {fileID: 0}
+  player: {fileID: 0}
+  gate: {fileID: 0}
+  tilesParent: {fileID: 0}
+  button: {fileID: 0}
+  loadingText: {fileID: 0}
+--- !u!65 &862941854506032849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862941854506032850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0206337, y: 3.0206337, z: 3.0206337}
+  m_Center: {x: -0.0090072155, y: 0, z: 0}
